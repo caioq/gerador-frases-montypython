@@ -29,4 +29,12 @@ public class Quote {
 	public void setQuote(String quote) {
 		this.quote = quote;
 	}
+
+
+	public String toJsonString() {
+		return "{" +
+				"\"actor\":\"" + actor + '\"' +
+				", \"quote\":\"" + quote + '\"' +
+				'}';
+	}
 }

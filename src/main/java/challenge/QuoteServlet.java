@@ -29,7 +29,8 @@ public class QuoteServlet extends HttpServlet {
 
             resp.setContentType("application/json");
             PrintWriter out = resp.getWriter();
-            out.print(quote);
+            //System.out.println(quote.toJsonString());
+            out.print(quote.toJsonString());
             resp.setStatus(HttpServletResponse.SC_OK);
         } catch (Exception e) {
             e.printStackTrace();
