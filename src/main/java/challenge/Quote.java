@@ -6,17 +6,27 @@ public class Quote {
 
 	private String quote;
 
+	public Quote() {
+	}
+
 	public Quote(String actor, String quote) {
 		this.actor = actor;
 		this.quote = quote;
 	}
 
 	public String getActor() {
-		return null;
+		return actor;
 	}
 
 	public String getQuote() {
-		return null;
+		return quote;
 	}
 
+	public void setActor(String actor) {
+		this.actor = actor;
+	}
+
+	public void setQuote(String quote) {
+		this.quote = quote;
+	}
 }
